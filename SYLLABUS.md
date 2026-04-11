@@ -12,11 +12,6 @@ This syllabus is organized into 8 classes. Each class has a theory focus, a prac
 - Two-pointer pattern.
 - Sliding window pattern.
 
-### Implementation
-
-- Build a dynamic array with resize logic.
-- Remove duplicates with the two-pointer pattern.
-- Find the maximum fixed-window sum with the sliding window pattern.
 
 ### LeetCode Practice
 
