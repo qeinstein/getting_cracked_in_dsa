@@ -1,0 +1,30 @@
+#Points from the Question given.
+#array i 1-indexed
+#array is named numbers
+#non-decreasing, sorted
+
+
+#The task is to write a code that finds two numbers that add up to a target
+
+
+
+class Solution:
+     def twoSum(self, numbers: list[int], target: int) -> list[int]:
+        # Initialize our two indices
+        left = 0
+        right = len(numbers) - 1
+        
+        while left < right:
+            current_sum = numbers[left] + numbers[right]
+            
+            if current_sum == target:
+                # The problem asks for 1-indexed results
+                return [left + 1, right + 1]
+            
+            elif current_sum < target:
+                # We need a larger sum, move left pointer right
+                left += 1
+            else:
+                # We need a smaller sum, move right pointer left
+                right -= 1
+        
